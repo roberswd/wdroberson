@@ -5,13 +5,18 @@ import SectionTitle from "./SectionTitle";
 const About = () => {
   return (
     <section className="about">
-      <SectionTitle title="About" />
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non
-        necessitatibus, expedita obcaecati officia accusamus, quidem fugiat
-        assumenda sunt quas et facere similique asperiores aliquid doloremque
-        voluptate aliquam numquam earum quos!
-      </p>
+      <div>
+        <p>Hi, my name is</p>
+        <p className="name">Wesley Roberson</p>
+        <p> A Fullstack Developer based in Austin, TX</p>
+      </div>
+      <div>
+        <img
+          alt="WD Roberson"
+          src="src/assets/wd_roberson.jpg"
+          title="WD Roberson"
+        />
+      </div>
     </section>
   );
 };

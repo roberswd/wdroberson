@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
@@ -11,16 +11,18 @@ import { Contact } from "./components/Contact";
 import Projects from "./components/Projects";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <Navbar />
-      <About />
-      <Experience />
-      <Projects />
-      <Technologies />
-      <Contact />
+      <div className="hero">
+        <Navbar />
+        <About />
+      </div>
+      <div className="content">
+        <Experience />
+        <Projects />
+        <Technologies />
+        <Contact />
+      </div>
     </>
   );
 }
