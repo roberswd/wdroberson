@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
 import SectionTitle from "./SectionTitle";
+import profile from "../assets/wd_roberson.jpg";
 
 const About = () => {
   return (
@@ -11,11 +12,7 @@ const About = () => {
         <p> A Fullstack Developer based in Austin, TX</p>
       </div>
       <div>
-        <img
-          alt="WD Roberson"
-          src="src/assets/wd_roberson.jpg"
-          title="WD Roberson"
-        />
+        <img alt="WD Roberson" src={profile} title="WD Roberson" />
       </div>
     </section>
   );
