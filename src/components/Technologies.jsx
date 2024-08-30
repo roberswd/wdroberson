@@ -1,7 +1,7 @@
 import React from "react";
 
 const Technologies = () => {
-  return <div>Technologies</div>;
+  return <h1>Technologies</h1>;
 };
 
 export default Technologies;
