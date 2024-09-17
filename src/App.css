@@ -13,7 +13,6 @@
 
 .hero {
   width: 100%;
-  /* background-color: #010720; */
   background-image: linear-gradient(to bottom, #010720 0%, #537895 100%);
   height: 100dvh;
 }
@@ -24,6 +23,16 @@
   /* flex-direction: row;
   align-items: center;
   justify-content: space-between; */
+  @media screen and (max-width: 960px) {
+    .nav_bar {
+      padding: 0 20px;
+      box-shadow: #f0833a70 0px 5px;
+      /* display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between; */
+    }
+  }
 }
 
 .nav_items {
@@ -33,6 +42,17 @@
   align-items: center;
   justify-content: space-between;
   margin: 0 2em;
+
+  @media screen and (max-width: 960px) {
+    .nav_items {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 2em;
+    }
+  }
 }
 
 .nav_links {
@@ -69,12 +89,33 @@
   align-items: center;
   justify-content: space-evenly;
   line-height: normal;
+
+  @media screen and (max-width: 960px) {
+    .hero_content {
+      margin-left: 2em;
+      font-size: 2rem;
+      height: 50vh;
+      line-height: 2.2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }
 
 .name {
   font-size: 4rem;
   padding: 0;
   margin: 0;
+  @media screen and (max-width: 960px) {
+    .name {
+      font-size: 2rem;
+      line-height: 2.1rem;
+      padding: 0;
+      margin: 0;
+    }
+  }
 }
 
 img {
@@ -86,42 +127,4 @@ img {
   /* margin: 0 2em; */
   padding: 0 2em;
   border-top: 2px solid var(--primary-font);
-}
-
-@media screen and (max-width: 960px) {
-  .nav_items {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 2em;
-  }
-
-  .nav_bar {
-    padding: 0 20px;
-    box-shadow: #f0833a70 0px 5px;
-    /* display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between; */
-  }
-
-  .name {
-    font-size: 2rem;
-    line-height: 2.1rem;
-    padding: 0;
-    margin: 0;
-  }
-
-  .hero_content {
-    margin-left: 2em;
-    font-size: 2rem;
-    height: 50vh;
-    line-height: 2.2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
 }
