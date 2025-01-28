@@ -1,0 +1,50 @@
+.parent-container {
+  overflow: hidden;
+}
+
+.job-container {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.6s ease-out;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  position: relative;
+}
+
+.left-column {
+  align-items: center;
+  justify-content: center;
+}
+
+.right-column {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.job-container.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.job-title {
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 1rem; */
+}
+
+.company-logo {
+  width: 50%;
+  height: 50%;
+  margin-right: 1rem;
+}
+
+.job-details {
+  font-size: 1rem;
+  color: #555;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateX(100%);
+}

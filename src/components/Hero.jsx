@@ -10,7 +10,7 @@ const Hero = (props) => {
       <div>
         <p>Welcome, my name is</p>
         <p className="name">Wesley Roberson</p>
-        <p> A Fullstack Developer based in Austin, TX</p>
+        <p> A Full Stack Developer based in Austin, TX</p>
       </div>
       {/* <div>
         <img alt="WD Roberson" src={profile} />

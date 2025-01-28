@@ -11,7 +11,7 @@
 }
 
 body {
-  color: var(--primary-font) a;
+  color: var(--primary-font);
   background-color: #537895;
   box-sizing: border-box;
   text-align: left;

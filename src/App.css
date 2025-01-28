@@ -11,6 +11,11 @@
 .splash {
 }
 
+.container {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
 .hero {
   width: 100%;
   background-image: linear-gradient(to bottom, #010720 0%, #537895 100%);
@@ -77,10 +82,6 @@
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
 }
-
-/* .content {
-  margin-left: 50px;
-} */
 
 .hero_content {
   font-size: 2rem;
