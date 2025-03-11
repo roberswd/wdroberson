@@ -3,39 +3,33 @@
 #root {
   display: block;
   font-family: "League Spartan", sans-serif;
-  --primary-font: #f0833a;
-  --hover-color: #535bf2;
-  color: var(--primary-font);
-}
+  --secondary-accent-font: #f0833a;
+  --primary-font: #ffffff;
+  --primary-accent-font: #535bf2;
 
-.splash {
+  color: var(--primary-font);
 }
 
 .container {
   max-width: 1700px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .hero {
   width: 100%;
-  background-image: linear-gradient(to bottom, #010720 0%, #537895 100%);
+  /* background-image: linear-gradient(to bottom, #010720 0%, #537895 100%); */
   height: 100dvh;
 }
 
 .nav_bar {
   box-shadow: #f0833a70 0px 5px;
   display: flex;
-  /* flex-direction: row;
-  align-items: center;
-  justify-content: space-between; */
+
   @media screen and (max-width: 960px) {
     .nav_bar {
       padding: 0 20px;
       box-shadow: #f0833a70 0px 5px;
-      /* display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between; */
     }
   }
 }
@@ -72,13 +66,13 @@
   transition-timing-function: ease-out;
   font-weight: 400;
   font-size: 1.4em;
-  color: var(--primary-font);
+  color: var(--primary-accent-font);
   text-decoration: inherit;
 }
 
 .navitem:hover {
   padding: 10px;
-  color: var(--hover-color);
+  color: var(--secondary-accent-font);
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
 }
@@ -125,7 +119,16 @@ img {
 }
 
 .content {
-  /* margin: 0 2em; */
   padding: 0 2em;
-  border-top: 2px solid var(--primary-font);
+  border-top: 2px solid var(--primary-accent-font);
+  overflow: hidden;
+}
+
+.wrap {
+  margin: 0 auto;
+  position: relative;
+  width: 1300px;
+  min-height: 100%;
+  max-width: 75%;
+  box-sizing: border-box;
 }

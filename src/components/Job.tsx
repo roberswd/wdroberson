@@ -5,7 +5,7 @@ interface JobProps {
   companyName: string;
   logo: string;
   jobTitle: string;
-  details: string;
+  details: Array<String>;
 }
 
 const Job: React.FC<JobProps> = ({ companyName, logo, jobTitle, details }) => {
@@ -17,8 +17,9 @@ const Job: React.FC<JobProps> = ({ companyName, logo, jobTitle, details }) => {
       (entries) => {
         const entry = entries[0];
         setIsVisible(entry.isIntersecting);
+        console.log(entry.target);
       },
-      { threshold: 0.2 } // Adjust threshold as needed
+      { threshold: 0.01 } // Adjust threshold as needed
     );
 
     if (jobRef.current) {
@@ -30,25 +31,37 @@ const Job: React.FC<JobProps> = ({ companyName, logo, jobTitle, details }) => {
         observer.unobserve(jobRef.current);
       }
     };
-  }, []);
+  }, [jobRef]);
+
+  const d = details.map((detail, i) => {
+    return <li key={companyName + i}>{detail}</li>;
+  });
 
   return (
-    <div
-      ref={jobRef}
-      className={`job-container ${isVisible ? "slide-in" : "hidden"}`}
-    >
-      <div className="left-column">
-        <img src={logo} alt={`${companyName} logo`} className="company-logo" />
-      </div>
-      <div className="right-column">
-        <div className="job-title">
-          <div>
-            <h2>{companyName}</h2>
-            <h3>{jobTitle}</h3>
-          </div>
+    <div className="parent-container" ref={jobRef}>
+      <div className={`${isVisible ? "job-cover hidden" : "job-cover"}`}></div>
+      <div
+        className={`${
+          isVisible ? "job-container visible-job" : "job-container"
+        }`}
+      >
+        <div className="left-column">
+          <img
+            src={logo}
+            alt={`${companyName} logo`}
+            className="company-logo"
+          />
         </div>
-        <div className="job-details">
-          <p>{details}</p>
+        <div className="right-column">
+          <div className="job-title">
+            <div>
+              <h2 className="job-heading">{companyName}</h2>
+              <h3 className="job-heading">{jobTitle}</h3>
+            </div>
+          </div>
+          <div className="job-details">
+            <ul>{d}</ul>
+          </div>
         </div>
       </div>
     </div>
