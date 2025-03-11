@@ -12,7 +12,7 @@
 
 body {
   color: var(--primary-font);
-  background-color: #3d3d3d;
+  background-color: var(--bg-color);
   box-sizing: border-box;
   text-align: left;
   margin: 0;

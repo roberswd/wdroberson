@@ -6,8 +6,10 @@
   --secondary-accent-font: #f0833a;
   --primary-font: #ffffff;
   --primary-accent-font: #535bf2;
+  --bg-color: #3d3d3d;
 
   color: var(--primary-font);
+  background-color: var(--bg-color);
 }
 
 .container {
@@ -23,8 +25,14 @@
 }
 
 .nav_bar {
-  box-shadow: #f0833a70 0px 5px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  box-shadow: #f0833a70 0 5px;
   display: flex;
+  justify-content: space-between;
+  background-color: var(--bg-color);
+  z-index: 1000;
 
   @media screen and (max-width: 960px) {
     .nav_bar {
