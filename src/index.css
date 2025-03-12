@@ -10,6 +10,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media screen and (max-width: 960px) {
+  :root {
+    font-size: 11px;
+  }
+}
+
 body {
   color: var(--primary-font);
   background-color: var(--bg-color);

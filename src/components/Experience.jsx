@@ -1,6 +1,8 @@
 import React from "react";
 import Job from "./Job";
-import { LUMEN_DETAILS, LUMEN_LOGO, META_DETAILS, META_LOGO } from "./Consts";
+import { LUMEN_DETAILS, META_DETAILS } from "./Consts";
+import META_LOGO from "../assets/meta_logo.svg";
+import LUMEN_LOGO from "../assets/lumen_logo.svg";
 
 export const Experience = () => {
   return (
