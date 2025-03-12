@@ -1,6 +1,6 @@
-export const META_LOGO = "src/assets/meta_icon.svg";
-export const REACT_LOGO = "src/assets/react.svg";
-export const LUMEN_LOGO = "src/assets/lumen_logo.svg";
+export const META_LOGO = "assets/meta_icon.svg";
+export const REACT_LOGO = "assets/react.svg";
+export const LUMEN_LOGO = "assets/lumen_logo.svg";
 
 export const LUMEN_DETAILS = [
   "Streamlined ticketing workflows by developing a centralized application and enhancing APIs with new functionality, leveraging Spring Framework, Apache Kafka, Java, Hibernate, and SQL to improve efficiency and meet customer requirements.",
