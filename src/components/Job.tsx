@@ -5,7 +5,7 @@ interface JobProps {
   companyName: string;
   logo: string;
   jobTitle: string;
-  details: Array<String>;
+  details: Array<string>;
 }
 
 const Job: React.FC<JobProps> = ({ companyName, logo, jobTitle, details }) => {
