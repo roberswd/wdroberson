@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 import SectionTitle from "./SectionTitle";
-import profile from "../assets/wd_roberson.jpg";
+import profile from "../assets/wd_roberson.png";
 
 const Hero = (props) => {
   const { isMobile } = props;
@@ -12,9 +12,7 @@ const Hero = (props) => {
         <p className="name">Wesley Roberson</p>
         <p> A Full Stack Software Engineer based in Austin, TX</p>
       </div>
-      {/* <div>
-        <img alt="WD Roberson" src={profile} />
-      </div> */}
+      {/* <div className="hero_image"></div> */}
     </section>
   );
 };
