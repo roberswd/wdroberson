@@ -28,7 +28,8 @@
   position: fixed;
   left: 0;
   right: 0;
-  box-shadow: #f0833a70 0 5px;
+  /* box-shadow: #f0833a70 0 5px; */
+  box-shadow: var(--primary-accent-font) 0 5px;
   display: flex;
   justify-content: space-between;
   background-color: var(--bg-color);
@@ -37,7 +38,8 @@
   @media screen and (max-width: 960px) {
     .nav_bar {
       padding: 0 20px;
-      box-shadow: #f0833a70 0px 5px;
+      /* box-shadow: #f0833a70 0px 5px; */
+      box-shadow: var(--primary-accent-font) 0 5px;
     }
   }
 }

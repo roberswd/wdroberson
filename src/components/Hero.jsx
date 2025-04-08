@@ -1,7 +1,6 @@
 import React from "react";
 import "../App.css";
-import SectionTitle from "./SectionTitle";
-import profile from "../assets/wd_roberson.png";
+import profile from "../assets/wd_roberson.jpg";
 
 const Hero = (props) => {
   const { isMobile } = props;

@@ -5,7 +5,7 @@ interface JobProps {
   companyName: string;
   logo: string;
   jobTitle: string;
-  details: Array<string>;
+  details: string;
 }
 
 const Job: React.FC<JobProps> = ({ companyName, logo, jobTitle, details }) => {
@@ -33,9 +33,9 @@ const Job: React.FC<JobProps> = ({ companyName, logo, jobTitle, details }) => {
     };
   }, [jobRef]);
 
-  const d = details.map((detail, i) => {
-    return <li key={companyName + i}>{detail}</li>;
-  });
+  // const d = details.map((detail, i) => {
+  //   return <li key={companyName + i}>{detail}</li>;
+  // });
 
   return (
     <div className="parent-container" ref={jobRef}>
@@ -55,12 +55,12 @@ const Job: React.FC<JobProps> = ({ companyName, logo, jobTitle, details }) => {
         <div className="right-column">
           <div className="job-title">
             <div>
-              <h2 className="job-heading">{companyName}</h2>
-              <h3 className="job-heading">{jobTitle}</h3>
+              <h1 className="job-heading">{companyName}</h1>
+              <h2 className="job-title">{jobTitle}</h2>
             </div>
           </div>
           <div className="job-details">
-            <ul>{d}</ul>
+            <h3>{details}</h3>
           </div>
         </div>
       </div>

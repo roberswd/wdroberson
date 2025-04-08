@@ -36,17 +36,21 @@ h2 {
 
 h3 {
   font-size: 2rem;
-  color: var(--primary-accent-font);
+  font-weight: normal;
+  /* color: var(--primary-accent-font); */
 }
 
 h4 {
   font-size: 1.75rem;
+  font-weight: normal;
 }
 
 h5 {
   font-size: 1.5rem;
+  font-weight: normal;
 }
 
 h6 {
   font-size: 1.25rem;
+  font-weight: normal;
 }

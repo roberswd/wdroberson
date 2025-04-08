@@ -9,16 +9,16 @@ export const Experience = () => {
     <div className="experience">
       <h1 id="experience">Experience</h1>
       <Job
-        companyName="Meta Technologies"
+        companyName="Meta Platforms"
         logo={META_LOGO}
         jobTitle="Software Engineer, E4"
-        details={META_DETAILS}
+        details={META_DETAILS[0]}
       ></Job>
       <Job
         companyName="Lumen Technologies"
         logo={LUMEN_LOGO}
         jobTitle="Software Developer II"
-        details={LUMEN_DETAILS}
+        details={LUMEN_DETAILS[0]}
       ></Job>
     </div>
   );
